@@ -5,14 +5,14 @@ people to stick with their gym schedule with a bonus of a fun character-leveling
 
 # Updates
 
-## Update(1.0) 
+### Update(1.0) 
 - Added basic inputs for character
 
-## Update(1.1)
+### Update(1.1)
 - Added a simple interface
 -  Changed inputs around and added XP counter
 
-## Update(1.2)
+### Update(1.2)
 - Added leveling system and changed UI.
 
 # How To Use
