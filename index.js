@@ -1,37 +1,41 @@
-let username, weight, height;
-/*document.getElementById("mySubmit").onclick = function()
-{
-    username = document.getElementById("myText").value;
-    document.getElementById("myh1").textContent = `Hello ${username}`;
-}
-    */
 
-let a =0;
 
-document.getElementById("mySubmit").onclick = function()
-{
-    username = document.getElementById("myText").value; 
-    a+=1;
-}
+let pullup, pushup, curl;
 
-document.getElementById("submit2").onclick = function()
+document.getElementById("submit").onclick = function()
 {
-    weight = document.getElementById("myText2").value; 
-    a+=1;
+    pullup = (document.getElementById("pullup").value) * 2;
+    pushup = (document.getElementById("pushup").value) * 2;
+    curl = (document.getElementById("curl").value) * 2;
+
+    totalXP = pullup + pushup + curl; 
+
+    document.getElementById("xp").textContent = `XP: ${totalXP}`;
 }
 
+/*
+document.addEventListener("DOMContentLoaded", function () {
+    let username, weight, height;
+    let a = 0;
 
-document.getElementById("submit3").onclick = function()
-{
-    height = document.getElementById("myText3").value; 
+    document.getElementById("mySubmit").onclick = function () {
+        username = document.getElementById("myText").value;
+        localStorage.setItem("username", username);
+        a += 1;
+    };
 
-    if(a >= 2)
-    {
-        window.location.href = "profile.html";
-        document.getElementById("name").textContent = `Your Name is ${username}`;
-        document.getElementById("weight").textContent = `Your Weight is ${weight}`;
-        document.getElementById("height").textContent = `Your Height is ${height}`;
-      
-        
-    }
-}
+    document.getElementById("submit2").onclick = function () {
+        weight = document.getElementById("myText2").value;
+        localStorage.setItem("weight", weight);
+        a += 1;
+    };
+
+    document.getElementById("submit3").onclick = function () {
+        height = document.getElementById("myText3").value;
+        localStorage.setItem("height", height);
+        if (a >= 2) {
+            window.location.href = "profile.html";
+        }
+    };
+});
+*/

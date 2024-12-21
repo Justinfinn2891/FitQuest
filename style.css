@@ -10,9 +10,10 @@ body{
     color:white;
 }
 
-div {
+div{
     width: 800px;
     text-align: center;
+
     background-color: rgb(173, 229, 255);
     border: 35px solid rgb(150, 208, 255);
     padding: 50px;
