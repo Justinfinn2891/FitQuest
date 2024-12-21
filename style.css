@@ -1,10 +1,11 @@
-body{
+#bod{
     font-family: Verdana;
     font-size: 200%;
 
     color: rgb(0, 0, 0);
-    background-color: rgb(212, 239, 255);
- 
+    background-image: linear-gradient(rgb(1, 162, 255),rgb(174, 225, 255));
+    background-attachment: fixed;
+    margin:0
 }
 #b1{
     color:white;
@@ -12,16 +13,72 @@ body{
 
 #yes{
     
-
-    width: 250px;
-    margin-right: 50000px;
+    position:absolute;
+    width: 175px;
+    margin-top: 20px;
+    margin-left: 15px;
     
 }
 #logo
-{
-    background-color: rgb(186, 223, 245);
+{   
+    position:absolute;
+    width:100%;
+    height:100px;
+    background-color: rgb(129, 209, 255);
 }
 
+#logo2
+{
+    position:absolute;
+    margin-left: 5px;
+    margin-top: 5px;
+  
+  
+    position:static;
+    width:99.1%;
+    height:90px;   
+    background-color: rgb(172, 225, 255);
+}
+
+#container{
+    position:absolute;
+    margin-left:50px;
+    margin-top:5px;
+    width:94%;
+    background-color: white;
+}
+
+#fam {
+    width: 100%; /* Scale with the section width */
+    height: 600px; /* Keep the height consistent */
+    object-fit: cover; /* Crop the image to fit without distortion */
+}
+#box
+{
+    
+    position:static;
+    background-color: rgb(223, 246, 255);
+}
+#separate
+{
+    position:static;
+    height:100px;
+ 
+    margin-top:0px;
+    background-image: linear-gradient(rgb(56, 56, 56),rgb(0, 0, 0));
+ 
+}
+#text{
+    position: static;
+    margin-left:5%
+}
+#level{
+    margin-left:500px;
+}
+#pull
+{
+    margin-left:50px;
+}
 /*
 div{
     width: 800px;
