@@ -17,6 +17,7 @@
     width: 175px;
     margin-top: 20px;
     margin-left: 15px;
+    z-index: 1;
     
 }
 #logo
@@ -44,10 +45,12 @@
 
 #container{
     position:absolute;
-    margin-left:50px;
-    margin-top:5px;
-    width:94%;
+    margin-left:47px;
+    margin-top:25px;
+    width:95%;
+    height:90%;
     background-image: linear-gradient(rgb(255, 255, 255),rgb(222, 243, 255));
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 #fam {
@@ -72,12 +75,22 @@
  
 }
 #text{
-    position: static;
-    margin-left:5%
+    position:absolute;
+    margin-left:47px;
+    margin-top:19%;
+    width:66%;
+    height:50%;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(241, 149, 10),rgb(255, 196, 87));
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-#level{
-    margin-left:500px;
+
+#atext{
+    position: absolute;
+    margin-left: 2%;
+    margin-top: 2%;
 }
+
 #pull
 {
     margin-left:50px;
@@ -175,6 +188,7 @@
     width: 200px;
     height:80px;
     margin-top: 5px;
+    z-index: 3;
 }
 #face:active()
 {
@@ -282,6 +296,74 @@
     transform: translate(-105px,-170px);
 }
 
+#goals
+{
+    position:absolute;
+    margin-left:47px;
+    margin-top:25px;
+    width:95%;
+    height:35%;
+    border-radius: 10px;
+    background-image: linear-gradient(rgb(10, 180, 223),rgb(0, 69, 109));
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+#goalsheet
+{
+    position:absolute;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    margin-left:3%;
+    margin-top:2%;
+}
+
+#levelsheet{
+    position:absolute;
+    margin-left:72%;
+    margin-top:19%;
+    width:25%;
+    height:50%;
+    border-radius: 35px;
+    background-image: linear-gradient(rgb(148, 255, 148),rgb(0, 158, 21));
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;
+}
+
+#levelsheetgrid{
+    position:absolute;
+    margin-left: 5%;
+    margin-top:5%;
+    width:25%;
+    height:10%;
+    border-radius: 20px;
+    background-image: linear-gradient(rgb(255, 255, 255),rgb(255, 255, 255));
+    text-align: center;
+ 
+}
+
+#level{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:30px;
+    
+}
+
+#lev{
+    
+
+    margin-top:10000px;
+    font-size:250px;
+    color:white;
+}
+#span{
+    position:absolute;
+    margin-left:-50%;
+    margin-top:10%;
+    width:100%;
+    height:100%;
+    border-radius: 35px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(0, 158, 21, 0));
+    display: inline-block;
+    text-align: center;
+}
 /*
 div{
     width: 800px;

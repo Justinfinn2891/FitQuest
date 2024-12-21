@@ -29,5 +29,5 @@ document.getElementById("submit").onclick = function()
     }
     console.log(nextXP);
     console.log(level);
-    document.getElementById("level").textContent = `Level: ${level}`;
+    document.getElementById("lev").textContent = `${level}`;
 }
