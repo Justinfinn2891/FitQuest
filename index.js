@@ -4,10 +4,11 @@ let pullup, pushupWeight, pushup, curl;
 
 document.getElementById("submit").onclick = function()
 {
-    pullup = (document.getElementById("pullup").value) * 2;
-    pullupWeight = (document.getElementById("pushupWeight").value) *2;
     pushup = (document.getElementById("pushup").value) * 2;
+    pushupWeight = (document.getElementById("pushupWeight").value) *2;
+    pullup = (document.getElementById("pullup").value) * 2;
     curl = (document.getElementById("curl").value) * 2;
+    curlWeight = (document.getElementById("curlWeight").value) *4;
 
     totalXP = pullup + pushupWeight + pushup + curl; 
 
