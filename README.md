@@ -18,3 +18,8 @@ people to stick with their gym schedule with a bonus of a fun character-leveling
 # How To Use
 FitQuest is very easy to use!
 - Download the repo and run index.html off of a live server
+
+OR
+
+Github pages:
+https://justinfinn2891.github.io/FitQuest/
