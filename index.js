@@ -4,29 +4,33 @@ let pullup, pushupWeight, pushup, curl, XP;
 let totalXP = 0;
 let level = 0; 
 let nextXP = 500;
-document.getElementById("submit").onclick = function()
+
+document.getElementById("face").onclick = function()
 {
-    pushup = (document.getElementById("pushup").value) * 2;
-    pullup = (document.getElementById("pullup").value) * 2;
-    curl = (document.getElementById("curl").value) * 2;
-
-
-    XP = (pullup + pushup + curl);
-    totalXP += XP; 
-    document.getElementById("xp").textContent = `Total XP: ${totalXP}`;
-    console.log(totalXP)
-    if(totalXP > nextXP)
-    {
-        console.log("Done");
-        level+=1;
-        console.log(level);
-        nextXP = nextXP + 500;
-    }
-    console.log(nextXP);
-    console.log(level);
-    document.getElementById("level").textContent = `Level: ${level}`;
+    window.location.href = "index.html";
 }
 
+document.getElementById("exercise").onclick = function()
+{
+    window.location.href = "exercise.html"
+}
+document.getElementById("exercise2").onclick = function()
+{
+    window.location.href = "exercise.html"
+}
+
+document.getElementById("profile").onclick = function()
+{
+    window.alert("Under Construction!");
+}
+document.getElementById("profile2").onclick = function()
+{
+    window.alert("Under Construction!");
+}
+document.getElementById("contact").onclick = function()
+{
+    window.alert("Under Construction!");
+}
 /*
 document.addEventListener("DOMContentLoaded", function () {
     let username, weight, height;

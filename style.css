@@ -133,15 +133,30 @@
     color:rgb(231, 231, 231)
 }
 
+#profile:active {
+    background-color: #005272;
+    box-shadow: 0 5px #666;
+    transform: translateY(5px);
+  }
 #exercise:hover{
     background-color: rgb(0, 134, 196);
     color:rgb(231, 231, 231)
 }
-
+#exercise:active {
+    background-color: #005272;
+    box-shadow: 0 5px #666;
+    transform: translateY(5px);
+  }
 #contact:hover{
     background-color: rgb(0, 134, 196);
     color:rgb(231, 231, 231)
 }
+
+#contact:active {
+    background-color: #005272;
+    box-shadow: 0 5px #666;
+    transform: translateY(5px);
+  }
 
 #Welcome
 {
@@ -153,7 +168,19 @@
     padding:50px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-
+#face{
+    background-color: #1d7aa500;
+    border-color:#91ff0000;
+    position: absolute;
+    width: 200px;
+    height:80px;
+    margin-top: 5px;
+}
+#face:active()
+{
+    background-color: #00354ee8;
+    border-color:#00aeff;
+}
 #buttondown{
     position:static;
     margin-top:250px;
@@ -196,6 +223,14 @@
 #exercise2:hover{
     background-color: rgb(0, 134, 196);
     color:rgb(231, 231, 231)
+}
+
+#profile2:active{
+    background-color: #00354e;
+}
+
+#exercise2:active{
+    background-color: #00354e;
 }
 
 #box2{
