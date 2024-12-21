@@ -1,10 +1,5 @@
 
 
-let pullup, pushupWeight, pushup, curl, XP;
-let totalXP = 0;
-let level = 0; 
-let nextXP = 500;
-
 document.getElementById("face").onclick = function()
 {
     window.location.href = "index.html";
@@ -29,7 +24,7 @@ document.getElementById("profile2").onclick = function()
 }
 document.getElementById("contact").onclick = function()
 {
-    window.alert("Under Construction!");
+    window.location.href = "contact.html";
 }
 /*
 document.addEventListener("DOMContentLoaded", function () {
