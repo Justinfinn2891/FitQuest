@@ -1,14 +1,15 @@
 
 
-let pullup, pushup, curl;
+let pullup, pushupWeight, pushup, curl;
 
 document.getElementById("submit").onclick = function()
 {
     pullup = (document.getElementById("pullup").value) * 2;
+    pullupWeight = (document.getElementById("pushupWeight").value) *2;
     pushup = (document.getElementById("pushup").value) * 2;
     curl = (document.getElementById("curl").value) * 2;
 
-    totalXP = pullup + pushup + curl; 
+    totalXP = pullup + pushupWeight + pushup + curl; 
 
     document.getElementById("xp").textContent = `XP: ${totalXP}`;
 }
