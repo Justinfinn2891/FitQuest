@@ -18,7 +18,6 @@
     margin-top: 20px;
     margin-left: 15px;
     z-index: 1;
-    
 }
 #logo
 {   
@@ -85,6 +84,11 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+#text:hover{
+    transform: scale(1.05) translate(0px, -5px); /* Grows the image slightly */
+    transition: transform 0.3s ease; /* Adds a smooth animation effect */
+}
+
 #atext{
     position: absolute;
     margin-left: 2%;
@@ -113,6 +117,7 @@
     border-radius: 12px;
     border: 1px solid #00354e; /* Green */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
 }
 
 #exercise
@@ -126,6 +131,7 @@
     border: 1px solid #00354e; /* Green */
     margin-left:25px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
 }
 
 #contact
@@ -139,6 +145,7 @@
     border: 1px solid #00354e; /* Green */
     margin-left:25px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
 }
 
 #profile:hover{
@@ -189,6 +196,7 @@
     height:80px;
     margin-top: 5px;
     z-index: 3;
+    cursor:pointer;
 }
 #face:active()
 {
@@ -215,6 +223,7 @@
     border-radius: 12px;
     border: 1px solid #00354e; /* Green */
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
 }
 
 #exercise2{
@@ -227,6 +236,7 @@
     border: 1px solid #00354e; /* Green */
     margin-left:25px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    cursor:pointer;
 }
 
 #profile2:hover{
@@ -238,6 +248,8 @@
     background-color: rgb(0, 134, 196);
     color:rgb(231, 231, 231)
 }
+
+
 
 #profile2:active{
     background-color: #00354e;
@@ -296,6 +308,13 @@
     transform: translate(-105px,-170px);
 }
 
+#img:hover, #img2:hover {
+    transform: scale(1.1) translate(-117px, -90px); /* Grows the image slightly */
+    transition: transform 0.3s ease; /* Adds a smooth animation effect */
+}
+
+
+
 #goals
 {
     position:absolute;
@@ -307,6 +326,12 @@
     background-image: linear-gradient(rgb(10, 180, 223),rgb(0, 69, 109));
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
+
+#goals:hover{
+    transform: scale(1.05) translate(0px, -5px); /* Grows the image slightly */
+    transition: transform 0.3s ease; /* Adds a smooth animation effect */
+}
+
 #goalsheet
 {
     position:absolute;
@@ -327,7 +352,12 @@
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     text-align: center;
 }
-
+#levelsheet:hover{
+ 
+    transform: scale(1.05) translate(0px, -5px); /* Grows the image slightly */
+    transition: transform 0.3s ease; /* Adds a smooth animation effect */
+    
+}
 #levelsheetgrid{
     position:absolute;
     margin-left: 5%;
@@ -423,19 +453,123 @@
     border-radius: 10px;
  
 }
+
+
+#progressbar2 {
+    background-color: rgba(0, 0, 0, 0.555);
+    border-radius: 13px;
+    /* (height of inner div) / 2 + padding */
+    width:500px;
+    padding: 3px;
+    margin-top:20%;
+  }
+  
+#progress2 {
+    background-color: rgb(0, 204, 255);
+    width: 0%;
+    /* Adjust with JavaScript */
+    height: 20px;
+    border-radius: 10px;
+ 
+}
 #goal1{
     position: absolute;
     margin-top:5%;
     margin-left:1%;
 }
-/*
-div{
-    width: 800px;
+
+#goal2{
+    position: absolute;
+    margin-top:9.5%;
+    margin-left:1%;
+}
+
+#txp{
+    position: absolute;
+    transform:translateY(60px);
+    margin-left:40%;
+    width:600px;
+}
+
+#about{
+    position:static;
+    padding:115px;
+    border-radius: 5px;
+    width:1600px;
+    margin-left:2%;
+    margin-top:350px;
+
+    background-image: linear-gradient(rgb(53, 53, 53),rgb(0, 0, 0));  
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,1);
+    text-align: center;
+}
+
+#aboutContact{
+    position:static;
+    padding:115px;
+    border-radius: 5px;
+    width:1600px;
+    margin-left:2%;
+    margin-top:350px;
+
+    background-image: linear-gradient(rgb(53, 53, 53),rgb(0, 0, 0));  
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,1);
+    text-align: center;
+}
+
+#textabout{
+
+    font-size:100px;
+    color: rgb(240, 240, 240);
+}
+
+
+#aboutContact{
+        position:static;
+        padding:350px;
+        border-radius: 2px;
+        width:1120px;
+        margin-left:2.2%;
+        margin-top:10px;
+        
+        background-image: linear-gradient(rgb(255, 255, 255),rgb(187, 185, 185));  
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,1);
+        text-align: center;
+
+}
+
+#aboutContact2{
+    position:absolute;
+    padding:60px;
+    border-radius: 2px;
+    width:1600px;
+    margin-left:-15.9%;
+    margin-top:-315px;
+    
+    background-image: linear-gradient(rgb(253, 253, 253),rgb(240, 240, 240));  
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,.5);
     text-align: center;
 
-    background-color: rgb(173, 229, 255);
-    border: 35px solid rgb(150, 208, 255);
-    padding: 50px;
-    margin-right: auto;
-  }
-*/
+}
+
+#aboutContact2:hover{
+    transform: scale(1.05) translate(0px, -5px); /* Grows the image slightly */
+    transition: transform 0.3s ease; /* Adds a smooth animation effect */
+}
+
+#lab{
+    position:absolute;
+    padding:10px;
+    border-radius: 2px;
+    width:1900px;
+    margin-left:-0%;
+    margin-top:20%;
+    
+    background-image: linear-gradient(rgb(170, 170, 170),rgb(240, 240, 240));  
+
+    text-align: center;
+}
+#textabout2{
+    font-size:60px;
+    color: rgb(0, 0, 0);
+}
